@@ -1,0 +1,16 @@
+{
+  "name": "nmanion-palindrome",
+  "version": "0.1.0",
+  "description": "Palindrome Detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "palindrome",
+    "learn-enough",
+    "javascript"
+  ],
+  "author": "Noah Manion",
+  "license": "ISC"
+}
