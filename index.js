@@ -1,22 +1,20 @@
-module.exports = Phrase;
+ module.exports = Phrase;
 
-//Adds reverse to all strings
-String.prototype.reverse = function(){
+// Adds `reverse` to all strings.
+
+String.prototype.reverse = function() { 
 	return Array.from(this).reverse().join("");
 }
-
-//define phrae
-function Phrase (content) {
+// Defines a Phrase object.
+function Phrase(content) { 
 	this.content = content;
-
-	//returns content processed for the plaindrome testing
-	this.processedContent = function processedContent() {
+	
+	// Returns content processed for palindrome testing.
+	this.processedContent = function processedContent() { 
 		return this.content.toLowerCase();
 	}
-
-	//returns true if phrase is a palindrome
+	// Returns true if the phrase is a palindrome, false otherwise.
 	this.palindrome = function palindrome() {
-		return this.processedContent() === this.processedContent.reverse();
-	}
+		return this.processedContent() === this.processedContent().reverse();
+	} 
 }
-
